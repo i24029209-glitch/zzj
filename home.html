@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Discover Guangdong - Home</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="top">
+        <div class="topin">
+            <span class="logo-text">GUANGDONG</span>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <nav id="mainNav">
+                <a href="home.html">Home</a>
+                <a href="landmarks.html">Landmarks</a>
+                <a href="food.html">Cuisine</a>
+                <a href="scenery.html">Scenery</a>
+                <a href="index.html" class="back-btn">Welcome</a>
+            </nav>
+        </div>
+    </header>
+    <div class="carousel">
+        <div class="carousel-track">
+            <div class="carousel-slide"><img src="./images/ban1.png" alt="Guangzhou Skyline"></div>
+            <div class="carousel-slide"><img src="./images/ban2.png" alt="Pearl River Night"></div>
+            <div class="carousel-slide"><img src="./images/ban3.png" alt="Lingnan Architecture"></div>
+        </div>
+        <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
+        <div class="carousel-dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+    </div>
+    <main class="main">
+        <div class="text-cell">
+            <h3>Guangdong — The Southern Gateway of China</h3>
+            <p>Guangdong Province, situated on the southern coast of China along the South China Sea, is a land where ancient traditions harmonize with modern innovation. As the birthplace of Lingnan culture and the engine of China's economic reform, Guangdong offers visitors an unparalleled journey through time and experience.</p>
+            <p>From the historic trading ports of Guangzhou, which have welcomed merchants from across the globe for over two millennia, to the gleaming skyscrapers of Shenzhen, Guangdong captivates every traveler with its extraordinary diversity, warmth, and boundless creative energy.</p>
+            <p>Whether you seek the architectural splendor of ancestral halls, the refined flavors of Cantonese cuisine, or the breathtaking natural landscapes that stretch from karst peaks to tropical coastlines, Guangdong promises an adventure that will linger in your memory forever.</p>
+        </div>
+        <div class="img-cell">
+            <img src="./images/1.png" alt="Guangdong Landscape">
+        </div>
+    </main>
+    <section class="tu">
+        <h2>Glimpses of Guangdong</h2>
+        <div class="img-group">
+            <img src="./images/a1.png" alt="Chen Clan Academy">
+            <img src="./images/a2.png" alt="Canton Tower">
+            <img src="./images/a3.png" alt="Lingnan Garden">
+            <img src="./images/a4.png" alt="Guangzhou City">
+            <img src="./images/a5.png" alt="Ancient Temple">
+        </div>
+    </section>
+    <section class="accordion-section">
+        <h2>Discover Guangdong</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">Why Visit Guangdong?</div>
+                <div class="accordion-content">
+                    <p>Guangdong is China's most populous province and its largest economy, yet it remains deeply rooted in tradition. The province offers a unique blend of experiences: world-class museums alongside ancient temples, Michelin-starred restaurants next to humble street food stalls, and futuristic skylines framing centuries-old villages. Its subtropical climate ensures year-round greenery, and its diverse geography — from coastal wetlands to mountain forests — provides habitats for extraordinary biodiversity.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">The Soul of Lingnan Culture</div>
+                <div class="accordion-content">
+                    <p>Lingnan culture, born in the humid subtropical south, is a vibrant fusion of indigenous traditions and external influences. Shaped by centuries of maritime trade along the Silk Road of the Sea, it absorbed elements from Southeast Asia, the Middle East, and the West. This openness is reflected in everything from Cantonese opera and martial arts to architecture and cuisine. The Lingnan spirit values pragmatism, innovation, inclusiveness, and a deep appreciation for the finer things in life — especially food, art, and craftsmanship.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">The Pearl River Delta</div>
+                <div class="accordion-content">
+                    <p>The Pearl River Delta is one of the most dynamic economic regions on Earth. Home to the megacities of Guangzhou, Shenzhen, Dongguan, and Foshan, this area drives China's technology, manufacturing, and trade sectors. Yet amid the urban energy, you will find tranquil gardens, historic waterfront towns, and UNESCO World Heritage sites. The delta is also a culinary paradise, where the finest ingredients from land and sea converge in a cuisine celebrated worldwide for its freshness, subtlety, and technical mastery.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">When to Visit</div>
+                <div class="accordion-content">
+                    <p>The best time to visit Guangdong is from October to March, when the weather is cool and pleasant with temperatures ranging from 15 to 25 degrees Celsius. Spring brings blooming flowers to Baiyun Mountain, while autumn offers clear skies ideal for exploring outdoor attractions. The Lunar New Year period in January or February is particularly festive, with flower markets, lion dances, and elaborate temple fairs filling the streets of every city and town across the province.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <h2>Explore Further</h2>
+        <div class="card-group">
+            <a href="landmarks.html" class="card">
+                <h3>Historical<br>Landmarks</h3>
+                <img src="./images/a6.png" alt="Historical Landmarks">
+            </a>
+            <a href="food.html" class="card">
+                <h3>Cantonese<br>Cuisine</h3>
+                <img src="./images/a7.png" alt="Cantonese Cuisine">
+            </a>
+            <a href="scenery.html" class="card">
+                <h3>Scenic<br>Wonders</h3>
+                <img src="./images/a8.png" alt="Scenic Wonders">
+            </a>
+        </div>
+    </section>
+    <footer>
+        &copy; Discover Guangdong &nbsp;|&nbsp; i24029209@student.newinti.edu.my
+    </footer>
+    <script>
+        var currentSlide = 0;
+        var totalSlides = 3;
+        function moveCarousel(d) {
+            currentSlide = (currentSlide + d + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+        function goToSlide(i) {
+            currentSlide = i;
+            updateCarousel();
+        }
+        function updateCarousel() {
+            document.querySelector('.carousel-track').style.transform = 'translateX(-' + currentSlide * 100 + '%)';
+            var dots = document.querySelectorAll('.dot');
+            for (var i = 0; i < dots.length; i++) {
+                dots[i].classList.toggle('active', i === currentSlide);
+            }
+        }
+        setInterval(function() { moveCarousel(1); }, 4000);
+        function toggleAccordion(header) {
+            var content = header.nextElementSibling;
+            var isActive = header.classList.contains('active');
+            var headers = document.querySelectorAll('.accordion-header');
+            for (var i = 0; i < headers.length; i++) {
+                headers[i].classList.remove('active');
+                headers[i].nextElementSibling.style.maxHeight = null;
+            }
+            if (!isActive) {
+                header.classList.add('active');
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        }
+        function toggleMenu() {
+            document.getElementById('mainNav').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
